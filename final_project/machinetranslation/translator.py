@@ -8,10 +8,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-#apikey='ZYSl9JhsoUi8fG4nXmgUJQDKaVl_aNMPVsLxaW5HW3i5'
-#url='https://api.eu-de.language-translator.watson.cloud.ibm.com/instances/c5f57fb1-8090-4c56-81ab-c3d6a0a71c83'
-apikey = os.environ['apikey']
-url = os.environ['url']
+apikey='ZYSl9JhsoUi8fG4nXmgUJQDKaVl_aNMPVsLxaW5HW3i5'
+url='https://api.eu-de.language-translator.watson.cloud.ibm.com/instances/c5f57fb1-8090-4c56-81ab-c3d6a0a71c83'
+#apikey = os.environ['apikey']
+#url = os.environ['url']
 
 authenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(
